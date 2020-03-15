@@ -98,6 +98,133 @@
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="V3h-Zf-L1a">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dMG-OS-18r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="NnK-WH-2BS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5th-a2-2nG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="cON-MP-wcY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="On Run" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXh-fb-8pe">
+                                <rect key="frame" x="153" y="28" width="69.5" height="22"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oso-cK-bSK">
+                                <rect key="frame" x="124" y="86" width="127" height="34.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="28"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Uc7-X4-jfp">
+                                <rect key="frame" x="147" y="448" width="80" height="64.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbN-cc-chy">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="22"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="firstBaseline" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="p62-q3-ylP">
+                                        <rect key="frame" x="1" y="30" width="79" height="34.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NCc-YQ-aSg">
+                                                <rect key="frame" x="0.0" y="0.0" width="44" height="34.5"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="28"/>
+                                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Km" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXI-4C-4zL">
+                                                <rect key="frame" x="47" y="9.5" width="32" height="22"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="wbN-cc-chy" firstAttribute="centerX" secondItem="Uc7-X4-jfp" secondAttribute="centerX" id="64A-2r-Ip4"/>
+                                </constraints>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="endRunOutline" translatesAutoresizingMaskIntoConstraints="NO" id="QFk-WE-pC7">
+                                <rect key="frame" x="79" y="573" width="175" height="60"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="pauseButton" translatesAutoresizingMaskIntoConstraints="NO" id="iCm-HJ-ByH">
+                                <rect key="frame" x="238" y="575" width="58" height="57"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="endRunButton" translatesAutoresizingMaskIntoConstraints="NO" id="eJk-dX-MhW">
+                                <rect key="frame" x="87" y="581" width="44" height="44"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="END RUN" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phM-3i-pVH">
+                                <rect key="frame" x="137" y="592" width="89" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LkE-AW-0PR">
+                                <rect key="frame" x="0.0" y="176" width="375" height="165"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="1DU-qj-S6p">
+                                <rect key="frame" x="0.0" y="197" width="375" height="113.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avg. Pace" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWH-vg-wAo">
+                                        <rect key="frame" x="144" y="0.0" width="87" height="22"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRd-7d-xtU">
+                                        <rect key="frame" x="128.5" y="25" width="118" height="63.5"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="52"/>
+                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/min" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1C8-hh-Pld">
+                                        <rect key="frame" x="167" y="91.5" width="41" height="22"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LkE-AW-0PR" firstAttribute="leading" secondItem="ehC-66-ZPh" secondAttribute="leading" id="EKb-pP-ZOh"/>
+                            <constraint firstItem="qXh-fb-8pe" firstAttribute="centerX" secondItem="5th-a2-2nG" secondAttribute="centerX" id="Iao-Qq-jWz"/>
+                            <constraint firstItem="qXh-fb-8pe" firstAttribute="centerX" secondItem="5th-a2-2nG" secondAttribute="centerX" id="LVd-a5-KMB"/>
+                            <constraint firstItem="oso-cK-bSK" firstAttribute="centerX" secondItem="5th-a2-2nG" secondAttribute="centerX" id="NQw-xh-Sye"/>
+                            <constraint firstItem="Uc7-X4-jfp" firstAttribute="centerX" secondItem="5th-a2-2nG" secondAttribute="centerX" id="Nbr-hz-xty"/>
+                            <constraint firstItem="qXh-fb-8pe" firstAttribute="top" secondItem="ehC-66-ZPh" secondAttribute="top" constant="8" id="Usd-hb-nuY"/>
+                            <constraint firstItem="QFk-WE-pC7" firstAttribute="leading" secondItem="eJk-dX-MhW" secondAttribute="trailing" constant="-52" id="Vuq-bg-1b5"/>
+                            <constraint firstItem="LkE-AW-0PR" firstAttribute="top" secondItem="oso-cK-bSK" secondAttribute="bottom" constant="42.5" id="Zb5-0V-XaH"/>
+                            <constraint firstItem="1DU-qj-S6p" firstAttribute="centerX" secondItem="LkE-AW-0PR" secondAttribute="centerX" id="a55-UJ-dwt"/>
+                            <constraint firstItem="1DU-qj-S6p" firstAttribute="centerX" secondItem="5th-a2-2nG" secondAttribute="centerX" id="cTS-s6-s6E"/>
+                            <constraint firstItem="iCm-HJ-ByH" firstAttribute="centerY" secondItem="QFk-WE-pC7" secondAttribute="centerY" id="iZd-HR-zUN"/>
+                            <constraint firstItem="LkE-AW-0PR" firstAttribute="trailing" secondItem="ehC-66-ZPh" secondAttribute="trailing" id="jaH-26-j73"/>
+                            <constraint firstItem="oso-cK-bSK" firstAttribute="top" secondItem="qXh-fb-8pe" secondAttribute="bottom" constant="36" id="o6b-DJ-OHB"/>
+                            <constraint firstItem="ehC-66-ZPh" firstAttribute="trailing" secondItem="1DU-qj-S6p" secondAttribute="trailing" id="r9G-WG-C5y"/>
+                            <constraint firstItem="1DU-qj-S6p" firstAttribute="centerY" secondItem="LkE-AW-0PR" secondAttribute="centerY" id="rt1-lH-bZz"/>
+                            <constraint firstItem="1DU-qj-S6p" firstAttribute="leading" secondItem="ehC-66-ZPh" secondAttribute="leading" id="u3G-9z-brT"/>
+                            <constraint firstItem="eJk-dX-MhW" firstAttribute="centerY" secondItem="QFk-WE-pC7" secondAttribute="centerY" id="xqe-F3-i95"/>
+                            <constraint firstItem="iCm-HJ-ByH" firstAttribute="leading" secondItem="QFk-WE-pC7" secondAttribute="trailing" constant="-16" id="ztu-1n-aQD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ehC-66-ZPh"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1450.4000000000001" y="-320.68965517241384"/>
+        </scene>
         <!--My Log-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
@@ -237,6 +364,9 @@
     <resources>
         <image name="BG" width="375" height="667"/>
         <image name="centerNavButton" width="58" height="58"/>
+        <image name="endRunButton" width="57" height="57"/>
+        <image name="endRunOutline" width="232" height="75"/>
+        <image name="pauseButton" width="75" height="75"/>
         <image name="startRunningButton" width="71" height="71"/>
         <image name="tabbar-myLogIconGray" width="25" height="25"/>
         <image name="tabbar-runIcon" width="27" height="28"/>

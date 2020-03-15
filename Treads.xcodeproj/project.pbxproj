@@ -79,7 +79,8 @@
 			isa = PBXGroup;
 			children = (
 				955780D0241D40F50079B47F /* Model */,
-				955780CF241D40A90079B47F /* Views */,
+				955780CF241D40A90079B47F /* View */,
+				955780F7241E5EF60079B47F /* Controller */,
 				955780CE241D408D0079B47F /* Utilities */,
 				955780CD241D40450079B47F /* Resourses */,
 				955780CC241D40280079B47F /* Extensions */,
@@ -100,8 +101,6 @@
 			isa = PBXGroup;
 			children = (
 				955780B8241D36400079B47F /* AppDelegate.swift */,
-				955780BA241D36400079B47F /* beginRunVC.swift */,
-				955780BC241D36400079B47F /* RunLogVC.swift */,
 				955780BE241D36400079B47F /* Main.storyboard */,
 				955780C1241D36410079B47F /* Assets.xcassets */,
 				955780C3241D36410079B47F /* LaunchScreen.storyboard */,
@@ -150,11 +149,11 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		955780CF241D40A90079B47F /* Views */ = {
+		955780CF241D40A90079B47F /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Views;
+			path = View;
 			sourceTree = "<group>";
 		};
 		955780D0241D40F50079B47F /* Model */ = {
@@ -162,6 +161,15 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		955780F7241E5EF60079B47F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				955780BA241D36400079B47F /* beginRunVC.swift */,
+				955780BC241D36400079B47F /* RunLogVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
